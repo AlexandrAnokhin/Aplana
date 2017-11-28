@@ -9,13 +9,10 @@ public class Calculator {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the first number: ");
+        System.out.print("Enter the expression: ");
         firstNumber = sc.nextDouble();
-        System.out.print("Enter the second number: ");
-        secondNumber = sc.nextDouble();
-
-        System.out.print("Enter the character of the operation you want to perform with numbers: ");
         character = sc.next();
+        secondNumber = sc.nextDouble();
 
         if (character.charAt(0) == '+') {
             result = MathematicalOperations.addition(firstNumber, secondNumber);
