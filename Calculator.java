@@ -26,7 +26,11 @@ public class Calculator {
         } else if (character.charAt(0) == '/') {
             result = MathematicalOperations.division(firstNumber, secondNumber);
         }
-        System.out.printf("%.4f", result);
+        if (result == 42) {
+            System.out.print("'Life, the Universe and Everything'");
+        } else {
+            System.out.printf("%.4f", result);
+        }
     }
 }
 
